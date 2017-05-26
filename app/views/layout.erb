@@ -11,6 +11,7 @@
     application.css is where you put your styles
   -->
   <link rel="stylesheet" href="/css/application.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Covered+By+Your+Grace" />
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js?app=skills"></script>
@@ -21,9 +22,9 @@
   <title>Image Search</title>
 </head>
 <body>
-<img class="background_image" src="images/funny.jpeg" border="0" alt="">
+<!-- <img class="background_image" src="images/funny.jpeg" border="0" alt=""> -->
  <nav>
-  <h2>Search Images of Dogs</h2>
+  <h1>Image Dog Search</h1>
   <% if logged_in? %>
     <li><a href="/users/<%= current_user.id %>/show"><%= current_user.name %></a></li>
     <li><a href="/sessions/logout"><u>logout</u></a></li>

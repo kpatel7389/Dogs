@@ -16,7 +16,7 @@ post '/images' do
     # Request headers
     request['Content-Type'] = 'multipart/form-data'
     # Request headers
-    request['Ocp-Apim-Subscription-Key'] = 'f9a84004ea9942c3ab88cd75ca3e2b61'
+    request['Ocp-Apim-Subscription-Key'] = '794d76ca50a844afba779ebe4c54dbf8'
     # Request body
     request.body = "{body}"
 
