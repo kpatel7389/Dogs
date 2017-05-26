@@ -8,7 +8,7 @@ end
 post '/images' do
     uri = URI('https://api.cognitive.microsoft.com/bing/v5.0/images/search')
     uri.query = URI.encode_www_form({
-      q: 'dog'
+      q: 'dogs'
     })
     # p uri
 
