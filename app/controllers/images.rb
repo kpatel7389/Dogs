@@ -2,7 +2,7 @@ require 'net/http'
 require 'json'
 
 get '/images' do
-  erb :"images"
+  erb :"index"
 end
 
 post '/images' do

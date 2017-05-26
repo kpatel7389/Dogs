@@ -1,4 +1,4 @@
 get '/' do
 
-  erb :"/images"
+  erb :"index"
 end
