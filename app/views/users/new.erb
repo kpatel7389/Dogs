@@ -1,0 +1,40 @@
+<div class="container">
+  <h1>Register HERE</h1>
+
+  <% if @errors %>
+  <p>Something went wrong...</p>
+    <ul>
+    <% @errors.each do |error| %>
+      <li class="error"><%= error %></li>
+    <% end %>
+    </ul>
+  <% end %>
+
+ <div class="form_container">
+  <form action="new" method="post">
+    <div class="form_label">
+      <label for="name">Name:</label>
+      <input type="text" name="user[name]">
+    </div>
+    <br>
+    <div class="form_label">
+      <label for="username">Username:</label>
+      <input type="text" name="user[username]">
+    </div>
+    <br>
+    <div class="form_label">
+      <label for="email">Email:</label>
+      <input type="text" name="user[email]">
+    </div>
+    <br>
+    <div class="form_label">
+      <label for="password">Password:</label>
+      <input type="password" name="user[password]">
+    </div>
+    <br>
+    <div class="submit_button">
+    <input type="submit" value="Register">
+    </div>
+  </form>
+
+</div>

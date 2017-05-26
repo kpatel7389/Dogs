@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Please Log In</h1>
+
+  <% if @errors %>
+  <p>Something went wrong...</p>
+    <ul>
+    <% @errors.each do |error| %>
+      <li class="error"><%= error %></li>
+    <% end %>
+    </ul>
+  <% end %>
+
+  <form action="/sessions/new" method="post">
+    <label for="username">Username:<br></label>
+    <input id="username" name="username">
+    <br>
+
+    <label for="password">Password:<br></label>
+    <input id="password" name="password" type="password">
+    <br><br>
+
+    <input type="submit" value="Sign In">
+  </form>
+
+</div>

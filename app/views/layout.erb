@@ -23,8 +23,16 @@
 <body>
 <img class="background_image" src="images/funny.jpeg" border="0" alt="">
  <nav>
-
   <h2>Search Images of Dogs</h2>
+  <% if logged_in? %>
+    <li><a href="/users/<%= current_user.id %>/show"><%= current_user.name %></a></li>
+    <li><a href="/sessions/logout"><u>logout</u></a></li>
+  <% else %>
+    <li><a href="/users/new"><u>register</u></a></li>
+    <li><a href="/sessions/new"><u>login</u></a></li>
+  <% end %>
+    <li><a href="/"><u>home</u></a></li>
+  </ul>
 <br>
 </nav>
   <%= yield %>
